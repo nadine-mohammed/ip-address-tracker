@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/favicon-32x32.png" rel="icon" type="image/png" />
+
+    <!-- my stylesheet -->
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- icons stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- bootstrap stylesheet & script -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- map stylesheet & script -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <!--  -->
+    <title>IP address Tracker</title>
+  </head>
+  <body>
+    <div class="main-bg">
+      <div class="alert alert-danger alert-wrong" role="alert" id="alert-wrong">
+        <div class="alert-link">Wrong IP address !</div>
+      </div>
+      <h1 class="title">IP Address Tracker</h1>
+      <div class="search-by-ip">
+        <input
+          type="text"
+          placeholder="Search for any IP address"
+          class="ip-input"
+          id="ip-input"
+        />
+        <button class="search-ico-btn" id="search-ico-btn">
+          <span class="material-icons"> chevron_right </span>
+        </button>
+      </div>
+      <div class="info-box">
+        <div class="info">
+          <div class="info-title">ip address</div>
+          <div class="info-details" id="ip-address"></div>
+        </div>
+        <div class="info">
+          <div class="info-title">location</div>
+          <div class="info-details" id="location"></div>
+        </div>
+        <div class="info">
+          <div class="info-title">timezone</div>
+          <div class="info-details" id="timezone"></div>
+        </div>
+        <div class="info">
+          <div class="info-title">isp</div>
+          <div class="info-details" id="isp"></div>
+        </div>
+      </div>
+    </div>
+    <div id="map" class="map">
+      <div id="mapid" class="mapid"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
