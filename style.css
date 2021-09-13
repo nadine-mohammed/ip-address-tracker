@@ -160,6 +160,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .info-details {
+    font-size: 20px;
+  }
   .map {
     height: 600px;
   }

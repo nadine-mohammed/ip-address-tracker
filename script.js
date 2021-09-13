@@ -1,6 +1,7 @@
 //API KEYS
-const IPAPIKey = "";//hidden
-const mapAccessToken ="";//hidden
+const IPAPIKey = "";
+const mapAccessToken =
+  "";
 
 const searchBtn = document.getElementById("search-ico-btn");
 const ipAddress = document.getElementById("ip-address");
